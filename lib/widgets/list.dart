@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/studentDetails.dart';
+import '../models/student_details.dart';
 import 'dart:math';
 
 class ListGen extends StatelessWidget {
@@ -11,14 +11,14 @@ class ListGen extends StatelessWidget {
       return Column(
           children: details.map((element) {
         return Container(
-          decoration: BoxDecoration(
-            boxShadow: const [BoxShadow(color: Colors.teal, blurRadius: 0.8)],
+          decoration: const BoxDecoration(
+            boxShadow: [BoxShadow(color: Colors.teal, blurRadius: 0.8)],
           ),
           height: 100,
           child: Card(
             child: Row(
               children: [
-                Container(
+                SizedBox(
                   // decoration: BoxDecoration(color: Colors.blue),
                   width: constraints.maxWidth * 0.25,
                   child: CircleAvatar(

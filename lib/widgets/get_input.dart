@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class GetInput extends StatefulWidget {
   final Function addToList;
-  GetInput(this.addToList, {Key? key}) : super(key: key);
+  const GetInput(this.addToList, {Key? key}) : super(key: key);
   @override
   _GetInputState createState() => _GetInputState();
 }
